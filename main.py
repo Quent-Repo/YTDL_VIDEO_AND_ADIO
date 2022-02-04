@@ -1,6 +1,5 @@
 import urllib
 import re
-import requests
 import ssl
 import os
 from pytube import YouTube
@@ -9,8 +8,8 @@ done = False
 
 #Holder
 def converter(r):
-	Hold = ""
-	return (Hold.join(r))
+    Hold = ""
+    return (Hold.join(r))
 
 out = []
 while not done:
@@ -19,7 +18,6 @@ while not done:
     if link == "":
         print("\n\n\n")
         print("Youtube Downloader V7 By Yudosai  \n\nwith great help from the pytube library")
-        print("ffmpeg added by grrkek")
         print("\n\nThanks for your support <3")
         break
     # link = "https://youtu.be/rQIwHD_ITIo"
@@ -34,10 +32,10 @@ while not done:
     ##My eddit
     Title_CMD = []
     for x in title:
-    	if(x == " "):
-    		Title_CMD.append("\ ")
-    	else:
-    		Title_CMD.append(x)
+        if(x == " "):
+            Title_CMD.append("\ ")
+        else:
+            Title_CMD.append(x)
     #Debug#
     print(converter(Title_CMD))
     ######
@@ -58,9 +56,9 @@ while not done:
     ## Command Line convert to mp3 can be replaced with anyother kind of format
     print("\n\n" + title)
     if(ending == "mp3"):
-    	os.system("ffmpeg -i " + DONE + ".mp4 " + DONE + ".mp3")
-        #print("\n\n" + title)
-        # print("done")
+        os.system("ffmpeg -i " + DONE + ".mp4 " + DONE + ".gif")
+        print("\n\n" + title)
+        print("done")
     else:
     	print("done")
 
